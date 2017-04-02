@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exam</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+		<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Jim+Nightshade|Oswald|Ranga" rel="stylesheet"> 
+    <style type="text/css">
+
+ .text{
+  position:relative;
+  display:block;
+ }   
+    
+.box {
+    border: 3px solid #343444;
+    overflow: hidden;
+    color: white;
+    background: black;
+    font-size: 20px;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+    
+  </style>
+
+
+	</head>
+	<body>
+
+<!-- form validation -->
+    <section class="formvalidation">
+      
+              <div class="container">
+            
+                
+              
+                  <div class="col-md-7 signup">
+
+                    <h3>signup here</h3>
+                   
+                    <form name="SignUp">
+                      <div class="row">
+                          <div class="form-group col-md-6">
+                          
+                              <input type="text" class="form-control" id="Fname" name="Fnm" placeholder="First Name">
+                          </div>
+                        
+                          <div class="form-group col-md-6">
+                           
+                                  <input type="text" class="form-control" id="Lname" name="Lnm" placeholder="Last Name">
+                         </div>
+                       </div>
+                      
+                      <div class="form-group">
+                         <input type="email" class="form-control" id="Email1" name="Eml" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="Password" name="Psw" placeholder="Enter Password">
+                      </div>
+                       <div class="form-group">
+                        <input type="password" class="form-control" id="re-Password" name="RPsw" placeholder="Re-enter Password">
+                      </div>
+
+                      <div class="form-group">
+                        <textarea id="Txtar" rows="8" name="TxT" placeholder="Your Vision"></textarea>
+                      </div>
+                      <div class="bton">
+                        <button type="button" class="btn btn-default btn-custom" onclick="ClickSignUp()">Sign Up</button>
+                      </div>
+                      
+                    </form>
+                    <h4 id="Error"></h4>
+                  </div>
+
+               </div>
+
+
+    </section>  
+  <!-- form validation -->
+<section class="slider">
+  <div class="fluid_container">
+      
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="images/bridge.jpg" data-src="images/bridge.jpg">
+                
+            </div>
+            <div data-thumb="images/leaf.jpg" data-src="images/leaf.jpg">
+                
+            </div>
+            <div data-thumb="images/sea.jpg" data-src="images/sea.jpg">
+                
+            </div>
+            <div data-thumb="images/road.jpg" data-src="images/road.jpg">
+                
+            </div>
+          
+        </div>
+</section>
+<section class=text>
+<select id="text">
+  <option value="Jim Nightshade">Jim Nightshade</option>
+  <option value="Baloo Bhaina">Baloo Bhaina</option>
+  <option value="Oswald">Oswald</option>
+  <option value="Ranga">Ranga</option>
+</select>
+
+<div class="container box">
+  <div class="row">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+</div>
+</section>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/camera.min.js'></script>  
+  <script src="js/custom.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var  T= $('#text').val();
+$('p').css('font-family',T);
+
+
+
+$('#text').change(function(){
+var T = $('#text').val();
+$('p').css('font-family',T);
+})
+  })
+</script>
+	</body>
+</html>

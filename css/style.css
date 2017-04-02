@@ -1,0 +1,78 @@
+.formvalidation{
+	background: url(../images/tianjin.jpg);
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: cover;
+	border-bottom: 4px solid #fff;
+	display:block;
+	overflow: hidden;
+
+}
+.signup{
+	margin: 0 auto;
+	float: none;
+	padding: 3em 0;
+}
+.signup h3{
+	text-align: center;
+	text-transform: uppercase;;
+	font-size: 40px;
+	font-weight: 700;
+	padding: 1em 0;
+	color: rgba(241, 241, 241, 0.81);
+}
+.signup h4{
+	text-align: center;
+	font-size: 19px;
+	height: 19px;
+	font-weight: 700;
+	padding: 1em 0;
+	color: #f37780;
+}
+#Fname{
+	margin-right: 
+}
+#Lname{
+	margin-left: 
+}
+#Txtar{
+	width: 100%;
+    border-radius: 4px;
+    background-color: rgba(43, 41, 41, 0.59);
+    color: #fff;
+    padding: 12px 12px;
+}
+.bton{
+	text-align: center;
+}
+.btn-custom{
+	padding: 7px 40px;
+	font-weight: 500;
+	font-size: 16px;
+	background-color: rgba(27, 27, 27, 0.59);
+	color: #fff;
+	
+}
+.btn-custom:hover{
+	
+	font-weight: 500;
+	font-size: 16px;
+	background-color: rgba(162, 161, 161, 0.53);
+	color: #fff;
+	
+}
+.btn-custom:active{
+	
+	font-weight: 500;
+	font-size: 16px;
+	background-color: rgba(162, 161, 161, 0.53);
+	color: #fff;
+	
+}
+.form-control {
+    padding: 20px 12px;
+    background-color: rgba(43, 41, 41, 0.59);
+    color: #fff;
+    font-weight: bold;
+}
+/*form validation*/
